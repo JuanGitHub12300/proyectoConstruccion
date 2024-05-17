@@ -1,6 +1,19 @@
 @extends('layouts.app', ['page' => __('Typography'), 'pageSlug' => 'typography'])
 
 @section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ __('Typography') }} - {{ config('app.name', 'Laravel') }}</title>
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
   <div class="row">
     <div class="col-md-12">
       <div class="card">
