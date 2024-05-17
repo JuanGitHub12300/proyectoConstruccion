@@ -16,11 +16,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
 <?php
-
-?>
-
-Route::view('/proyectos', 'proyecto.index');
 
 use Illuminate\Support\Facades\Route;
 
@@ -35,8 +32,5 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('pages.register');
 });
-
-?>
-
 
 
